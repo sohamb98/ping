@@ -16,7 +16,7 @@ function submitdata()
    'name':name
   },
   success: function(html){
-   $('#getdata').html(html);
+   $('#getdata').append(html);
   }
  });
 	

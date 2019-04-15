@@ -41,6 +41,7 @@ if ($socket) {
     if ($sent > 0) {
         $server_response = fread($socket, 4096);
         echo $server_response;
+        echo "\n";
     }
 } else {
     echo 'Unable to connect to server';
