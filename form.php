@@ -8,12 +8,12 @@
 <script>
 function submitdata()
 {
- var name=document.getElementById( "name" );
+ var name=document.getElementById( "name" ).value;
  $.ajax({
-  type: 'post',
+  type: 'POST',
   url: 'formtest.php',
   data: {
-   'name':name,
+   'name':name
   },
   success: function(html){
    $('#getdata').html(html);
@@ -31,7 +31,7 @@ function submitdata()
 
 
     <form>
-        Name:<input type = "text" name = "name">
+        Name:<input type = "text" name = "name" id="name">
         <input type="submit" id="submit" value="Submit" onclick="return submitdata()">
     </form>
     <div id ="getdata"></div>  
