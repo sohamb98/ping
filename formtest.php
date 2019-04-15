@@ -19,14 +19,16 @@ if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
 
-$sql = "SELECT url FROM ip";
+//$sql = "SELECT url FROM ip";
+$sql = "SELECT url FROM ip WHERE website LIKE '".$_POST['name']."';";
 $result = $conn->query($sql);
 
 if ($result->num_rows > 0) {
     // output data of each row
     while($row = $result->fetch_assoc()) {
         echo "url: " . $row["url"]."<br>";
-        echo $_POST['name'];
+        //echo $_POST['name'];
+        $ip = $row["url"];
     }
 } else {
     echo "0 results";
