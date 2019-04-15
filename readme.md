@@ -38,3 +38,8 @@ to the values matching your SQL Server
 7.Entering 'google' should also connect you to the server
 8.Entering 'yahoo' should returns the local ip adress of my computer but for you it will be different. Update it before running it or else it will return error  
 Note: Make Sure the port in both the server.py and formtest.php is same 
+
+Soham Bhattacharya
+(thinkerxyz)
++917325817958
+bhattacharya.soham@outlook.com
