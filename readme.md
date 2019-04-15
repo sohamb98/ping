@@ -8,22 +8,24 @@ the form page then connects to the ip adress and gets a reply
 
 the respose from the server is recorded and appended to the form page without refreshing the page
 
-##Technologies used
+## Technologies used
 
-####Web Server
+#### Web Server
 Microsoft-IIS/10.0
 
 PHP version: 7.2.14 
 
-####Database
+#### Database
 Database client version: mysql8(make sure connections can be made using native password instead of auth socket)
 
 GUI: phpMyAdmin Version information: 4.8.5
 
-##Socket Listener
+## Socket Listener
+
 The socket listening file server.py should be executed with Python 2.7.14
 
-##Instructions to run
+## Instructions to run
+
 0.Open formtest.php and update: 
 $servername
 $username
