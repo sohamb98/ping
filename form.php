@@ -24,17 +24,30 @@ function submitdata()
 }
 </script>
 
-
+<style>
+div.form {
+    display: inline-block;
+    text-align: center;
+    width:1200px;
+}
+body{
+    font-family: 'Slabo 27px', serif;
+}
+</style>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<link href="https://fonts.googleapis.com/css?family=Slabo+27px" rel="stylesheet"> 
 </head>
 
 <body>
 
-
+<div class="form">
     <form>
         Name:<input type = "text" name = "name" id="name">
         <input type="submit" id="submit" value="Submit" onclick="return submitdata()">
     </form>
-    <div id ="getdata"></div>  
+</div>
+
+    <div id ="getdata" style="text-align: center; border: 3px solid green;"></div>  
     <p id="msg">  </p>
 </body>
 
