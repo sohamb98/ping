@@ -1,6 +1,7 @@
 
 # first of all import the socket library 
-import socket                
+import socket 
+import time               
   
 # next create a socket object 
 s = socket.socket()          
@@ -8,7 +9,7 @@ print "Socket successfully created"
   
 # reserve a port on your computer in our 
 # case it is 12345 but it can be anything 
-port = 1221              
+port = 1220              
   
 # Next bind to the port 
 # we have not typed any ip in the ip field 
@@ -32,6 +33,7 @@ while True:
   
    # send a thank you message to the client.  
    c.send('Thank you for connecting') 
+   time.sleep(1)
   
    # Close the connection with the client 
    c.close() 
