@@ -1,3 +1,7 @@
+# Update
+
+The update directory now implements a different type of form. The user can enter a word into the the form as input. The word is sent to the server which validates the words with respect to Bing Search suggestions and returns it back. The form and python script communicates with socket programs.
+
 # Ping
 
 A python based TCP server was created listening to a specific port.
